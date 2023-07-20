@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMimi", "PayMimi\PayMimi.csproj", "{713E95A4-B528-40FC-9EF9-A0054313641D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMimi.UnitTest", "PayMimi.UnitTest\PayMimi.UnitTest.csproj", "{A2F5000C-FA55-4F8D-9B64-BA44B31A424F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{713E95A4-B528-40FC-9EF9-A0054313641D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{713E95A4-B528-40FC-9EF9-A0054313641D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{713E95A4-B528-40FC-9EF9-A0054313641D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F5000C-FA55-4F8D-9B64-BA44B31A424F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F5000C-FA55-4F8D-9B64-BA44B31A424F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F5000C-FA55-4F8D-9B64-BA44B31A424F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F5000C-FA55-4F8D-9B64-BA44B31A424F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
