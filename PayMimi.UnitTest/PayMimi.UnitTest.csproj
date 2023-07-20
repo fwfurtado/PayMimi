@@ -24,8 +24,4 @@
       <ProjectReference Include="..\PayMimi\PayMimi.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Domain\ValueObjects\" />
-    </ItemGroup>
-
 </Project>
