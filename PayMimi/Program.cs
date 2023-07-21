@@ -1,5 +1,7 @@
 using FluentValidation;
+using PayMimi.Domain.Repositories;
 using PayMimi.Domain.Services;
+using PayMimi.Domain.Validations;
 using PayMimi.Infra.Http.Clients;
 using PayMimi.Web.Requests;
 using PayMimi.Web.Validations;
@@ -16,8 +18,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // builder.Services.AddFluentValidationAutoValidation();
-
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IValidator<CustomerRegistrationIntentRequest>, CustomerRegistrationIntentValidator>();
+builder.Services.AddScoped<IValidator<RegistrationIntentCommand>, RegistrationIntentValidator>();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddTransient<AddApiKeyHandler>();

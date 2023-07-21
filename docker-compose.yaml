@@ -1,0 +1,12 @@
+version: '3.7'
+
+services: 
+  apis:
+    image: "mockoon/cli"
+    command: ["-d", "/data/social-number.json", "-p" , "3000"]
+    volumes:
+      - type: bind
+        source: ./PayMimi.UnitTest/Mockoon/
+        target: /data
+    ports:
+      - "3000:3000"

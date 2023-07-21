@@ -24,7 +24,6 @@ public class SocialNumberClient
     [OneTimeSetUp]
     public async Task BeforeAll()
     {
-        Trace.Listeners.Add(new ConsoleTraceListener());
         await _mockoonContainer.StartAsync();
     }
 
@@ -32,7 +31,6 @@ public class SocialNumberClient
     public async Task AfterAll()
     {
         await _mockoonContainer.StopAsync();
-        Trace.Flush();
     }
 
     [Test]
