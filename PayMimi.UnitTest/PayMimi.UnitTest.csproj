@@ -18,10 +18,15 @@
         <PackageReference Include="NUnit" Version="3.13.2" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
         <PackageReference Include="coverlet.collector" Version="3.1.0" />
+        <PackageReference Include="Testcontainers" Version="3.3.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PayMimi\PayMimi.csproj" />
+        <ProjectReference Include="..\PayMimi\PayMimi.csproj"/>
+        <Content Include="Mockoon/*.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
+
 
 </Project>
